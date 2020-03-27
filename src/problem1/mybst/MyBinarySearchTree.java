@@ -32,6 +32,10 @@ public class MyBinarySearchTree {
                 {
                     temp=temp.getLeft();
                 }
+                else
+                {
+                    temp=temp.getRight();
+                }
             }
         }
     }
