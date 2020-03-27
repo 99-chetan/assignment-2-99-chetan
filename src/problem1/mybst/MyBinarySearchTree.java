@@ -51,4 +51,9 @@ public class MyBinarySearchTree {
             }
         }
     }
+    public void traverseLevelOrder(TreeNode node){
+        int count=0;
+        Queue<TreeNode> queue=new LinkedList<>();
+        queue.add(node);
+    }
 }
