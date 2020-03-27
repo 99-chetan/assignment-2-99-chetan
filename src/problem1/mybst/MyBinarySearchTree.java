@@ -41,7 +41,7 @@ public class MyBinarySearchTree {
             {
                 parent.setLeft(node);
                 size++;
-                System.out.println("Insert successful at left");
+                System.out.println("Insertion successful at left");
             }
         }
     }
