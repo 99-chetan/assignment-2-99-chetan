@@ -14,8 +14,8 @@ public class MyMain {
         MyBinarySearchTree bst = new MyBinarySearchTree();
         System.out.print("For Insertion press 1, for printing left nodes and nodes which who doesn't have left child press 2: ");
         int counter = sc.nextInt();
-        while(counter!=0){
-            switch(counter) {
+        while(counter!=0) {
+            switch (counter) {
                 case 1:
                     System.out.print("Enter No.: ");
                     bst.insert(sc.nextInt());
@@ -26,5 +26,8 @@ public class MyMain {
                 default:
                     System.out.println("Please enter a valid Number");
             }
+            System.out.print("For Insertion press 1, for printing left nodes and nodes which who doesn't have left child press 2, to exit press 0: ");
+            counter = sc.nextInt();
+        }
     }
 }
