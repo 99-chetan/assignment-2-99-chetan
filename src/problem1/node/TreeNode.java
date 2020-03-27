@@ -25,4 +25,8 @@ public class TreeNode {
     {
         this.data = data;
     }
+    public TreeNode getLeft()
+    {
+        return left;
+    }
 }
