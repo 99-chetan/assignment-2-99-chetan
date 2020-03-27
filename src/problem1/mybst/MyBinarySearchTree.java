@@ -12,5 +12,8 @@ public class MyBinarySearchTree {
     private TreeNode root;
     private int size;
 
-
+    public TreeNode getRoot()
+    {
+        return root;
+    }
 }
