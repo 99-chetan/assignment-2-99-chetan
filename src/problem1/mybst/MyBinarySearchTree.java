@@ -51,25 +51,28 @@ public class MyBinarySearchTree {
             }
         }
     }
-    public void traverseLevelOrder(TreeNode node){
-        int count=0;
-        Queue<TreeNode> queue=new LinkedList<>();
-        queue.add(node);
-        System.out.print("Left Node data: ");
-        while(!(queue.isEmpty())){
-            TreeNode currentNode=queue.remove();
-            if(currentNode.getLeft()==null){
-                count++;
-            }
-            else if(currentNode.getLeft()!=null){
-                System.out.print(currentNode.getLeft().getData()+" ");
-                queue.add(currentNode.getLeft());
-            }
-            if(currentNode.getRight()!=null){
-                queue.add(currentNode.getRight());
-            }
+    public void traverseLevelOrder(TreeNode node) {
+        if (node == null) {
         }
-        System.out.println();
-        System.out.println("Number of nodes who doesn't have left node: "+count);
+        else {
+            int count = 0;
+            Queue<TreeNode> queue = new LinkedList<>();
+            queue.add(node);
+            System.out.print("Left Node data: ");
+            while (!(queue.isEmpty())) {
+                TreeNode currentNode = queue.remove();
+                if (currentNode.getLeft() == null) {
+                    count++;
+                } else if (currentNode.getLeft() != null) {
+                    System.out.print(currentNode.getLeft().getData() + " ");
+                    queue.add(currentNode.getLeft());
+                }
+                if (currentNode.getRight() != null) {
+                    queue.add(currentNode.getRight());
+                }
+            }
+            System.out.println();
+            System.out.println("Number of nodes who doesn't have left node: " + count);
+        }
     }
 }
