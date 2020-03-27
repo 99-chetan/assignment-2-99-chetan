@@ -23,5 +23,12 @@ public class MyBinarySearchTree {
             size++;
             System.out.println("Inserted successfully at root");
         }
+        else{
+            TreeNode temp=root;
+            TreeNode parent=null;
+            while(temp!=null){
+
+            }
+        }
     }
 }
