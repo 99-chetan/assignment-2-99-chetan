@@ -16,4 +16,12 @@ public class MyBinarySearchTree {
     {
         return root;
     }
+    public void insert(int data) {
+        TreeNode node=new TreeNode(data);
+        if(root==null) {
+            root = node;
+            size++;
+            System.out.println("Inserted successfully at root");
+        }
+    }
 }
