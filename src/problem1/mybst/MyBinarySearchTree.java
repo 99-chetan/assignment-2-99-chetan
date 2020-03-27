@@ -61,6 +61,15 @@ public class MyBinarySearchTree {
             if(currentNode.getLeft()==null){
                 count++;
             }
+            else if(currentNode.getLeft()!=null){
+                System.out.print(currentNode.getLeft().getData()+" ");
+                queue.add(currentNode.getLeft());
+            }
+            if(currentNode.getRight()!=null){
+                queue.add(currentNode.getRight());
+            }
         }
+        System.out.println();
+        System.out.println("Number of nodes who doesn't have left node: "+count);
     }
 }
