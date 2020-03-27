@@ -24,7 +24,7 @@ public class MyMain {
                     bst.traverseLevelOrder(bst.getRoot());
                     break;
                 default:
-                    System.out.println("Please enter a valid Number");
+                    System.out.println("Please enter a valid No.");
             }
             System.out.print("For Insertion press 1, for printing left nodes and nodes which who doesn't have left child press 2, to exit press 0: ");
             counter = sc.nextInt();
