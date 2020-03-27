@@ -37,6 +37,12 @@ public class MyBinarySearchTree {
                     temp=temp.getRight();
                 }
             }
+            if(node.getData()<=parent.getData())
+            {
+                parent.setLeft(node);
+                size++;
+                System.out.println("Insert successful at left");
+            }
         }
     }
 }
