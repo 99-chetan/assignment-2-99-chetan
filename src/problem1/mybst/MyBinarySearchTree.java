@@ -55,5 +55,12 @@ public class MyBinarySearchTree {
         int count=0;
         Queue<TreeNode> queue=new LinkedList<>();
         queue.add(node);
+        System.out.print("Left Node data: ");
+        while(!(queue.isEmpty())){
+            TreeNode currentNode=queue.remove();
+            if(currentNode.getLeft()==null){
+                count++;
+            }
+        }
     }
 }
