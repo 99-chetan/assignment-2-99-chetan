@@ -28,5 +28,8 @@ public class MyQueue {
         }
     }
 
-
+    public void preSuccessor(TreeNode root){
+        if(root == null)
+            return;
+    }
 }
