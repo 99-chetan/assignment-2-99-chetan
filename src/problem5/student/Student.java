@@ -18,4 +18,12 @@ public class Student {
         this.backlog = backlog;
         count=0;
     }
+
+    public int getRollno() {
+        return rollno;
+    }
+    public void setRollno(int rollno) {
+        this.rollno = rollno;
+    }
+
 }
