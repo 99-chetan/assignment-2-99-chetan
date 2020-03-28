@@ -37,5 +37,10 @@ public class Student {
     public void setBacklog(int backlog) {
         this.backlog = backlog;
     }
-
+    public int getCount(){
+        return count;
+    }
+    public void getINX(){
+        count++;
+    }
 }
