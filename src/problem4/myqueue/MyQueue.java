@@ -31,5 +31,10 @@ public class MyQueue {
     public void preSuccessor(TreeNode root){
         if(root == null)
             return;
+        else{
+            enqueue(root.getData());
+            preSuccessor(root.getLeft());
+            preSuccessor(root.getRight());
+        }
     }
 }
