@@ -71,4 +71,8 @@ public class MyCircularQueue {
         }
         return response;
     }
+
+    public int size(){
+        return size;
+    }
 }
