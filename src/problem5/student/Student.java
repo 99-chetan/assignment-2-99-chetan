@@ -31,4 +31,11 @@ public class Student {
     public void setName(String name) {
         this.name = name;
     }
+    public int getBacklog() {
+        return backlog;
+    }
+    public void setBacklog(int backlog) {
+        this.backlog = backlog;
+    }
+
 }
