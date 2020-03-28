@@ -38,5 +38,15 @@ public class MyMain {
         preorder(obj.getRoot());
     }
 
-
+    public static void main(String[] args) {
+        MyBinarySearchTree obj = new MyBinarySearchTree();
+        obj.insert(5);
+        obj.insert(10);
+        obj.insert(1);
+        obj.insert(6);
+        obj.insert(50);
+        obj.insert(40);
+        obj.insert(30);
+        prepost();
+    }
 }
