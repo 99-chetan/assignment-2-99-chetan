@@ -72,7 +72,7 @@ public class MyBinarySearchTree {
                 }
             }
             System.out.println();
-            System.out.println("Number of nodes who doesn't have left node: " + count);
+            System.out.println("Number of nodes which don't have left node: " + count);
         }
     }
 }
