@@ -14,4 +14,7 @@ public class Node {
         this.data=data;
         next=null;
     }
+    public int getData() {
+        return data;
+    }
 }
