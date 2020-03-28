@@ -18,11 +18,30 @@ public class MyCircularQueue {
         rear=null;
         size=0;
     }
+
     public boolean isEmpty(){
         boolean response=false;
         if(size==0){
             response=true;
         }
         return response;
+    }
+
+    public void enqueue(Student element){
+        Node node=new Node(element);
+        if(front==null){
+            front=node;
+            rear=node;
+            rear.setNext(front);
+            size++;
+            System.out.println("Value successfully appended");
+        }
+        else{
+            rear.setNext(node);
+            rear=node;
+            rear.setNext(front);
+            size++;
+            System.out.println("Value successfully appended");
+        }
     }
 }
