@@ -30,6 +30,14 @@ public class MyMain {
                         System.out.println("The Queue is empty");
                     }
                     break;
+                case 3:
+                    obj.traversing();
+                    break;
+                case 4:
+                    System.out.println("No of elements: "+obj.getSize());
+                    break;
+                default:
+                    System.out.println("Please enter a valid option");
             }
         }
     }
