@@ -14,5 +14,11 @@ public class MyMain {
     public static void main(String[] args){
         MyCircularQueue obj = new MyCircularQueue();
         Scanner sc=new Scanner(System.in);
+        System.out.print("Press 1 to enqueue, press 2 to dequeue: ");
+        int counter=sc.nextInt();
+        sc.nextLine();
+        while(counter!=0){
+
+        }
     }
 }
