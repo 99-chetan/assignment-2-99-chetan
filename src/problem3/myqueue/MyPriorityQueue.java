@@ -12,5 +12,16 @@ public class MyPriorityQueue {
     private Node rear;
     private int size;
 
-
+    public MyPriorityQueue(){
+        front=null;
+        rear=null;
+        size=0;
+    }
+    public boolean isEmpty(){
+        boolean response=false;
+        if(front!=null || size!=0){
+            response=true;
+        }
+        return response;
+    }
 }
