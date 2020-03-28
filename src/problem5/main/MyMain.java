@@ -18,7 +18,18 @@ public class MyMain {
         int counter=sc.nextInt();
         sc.nextLine();
         while(counter!=0){
-
+            switch(counter){
+                case 1:
+                    System.out.print("Enter Name: ");
+                    String name = sc.nextLine();
+                    System.out.print("Enter roll number: ");
+                    int roll = sc.nextInt();
+                    System.out.print("Enter Backlog: ");
+                    int back = sc.nextInt();
+                    Student stu = new Student(roll, name, back);
+                    obj.enqueue(stu);
+                    break;
+            }
         }
     }
 }
