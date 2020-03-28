@@ -31,5 +31,12 @@ public class MyMain {
         }
     }
 
+    public static void prepost(){
+        MyBinarySearchTree obj = new MyBinarySearchTree();
+        postorder(obj.getRoot());
+        System.out.println();
+        preorder(obj.getRoot());
+    }
+
 
 }
