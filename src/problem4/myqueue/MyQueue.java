@@ -22,5 +22,11 @@ public class MyQueue {
             front = ns;
             rear = ns;
         }
+        else{
+            rear.setNext(ns);
+            rear = ns;
+        }
     }
+
+
 }
