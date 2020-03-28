@@ -33,7 +33,14 @@ public class MyPriorityQueue {
                 rear.setNext(front);
                 size--;
             }
-
+            else {
+                response=new Node(front.getData());
+                front=null;
+                rear=null;
+                size--;
+            }
         }
+        return response;
     }
+
 }
