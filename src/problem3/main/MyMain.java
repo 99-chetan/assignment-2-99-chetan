@@ -39,6 +39,8 @@ public class MyMain {
                 default:
                     System.out.println("Please enter a valid option");
             }
+            System.out.print("For Insertion press 1, for Dequeue press 2, for traversing press3, to print number of elements press 4, to exit press 0: ");
+            counter=sc.nextInt();
         }
     }
 }
