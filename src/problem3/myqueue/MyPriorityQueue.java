@@ -43,4 +43,14 @@ public class MyPriorityQueue {
         return response;
     }
 
+    public void  enqueue(int data){
+        Node node=new Node(data);
+        if(front==null){
+            front=node;
+            rear=node;
+            size++;
+            System.out.println("Value Entered successfully...");
+        }
+
+    }
 }
