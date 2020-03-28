@@ -90,6 +90,11 @@ public class MyPriorityQueue {
                 temp = temp.getNext();
                 temp1--;
             }
+            System.out.println();
+        }
+        else {
+            System.out.println("Queue is empty");
         }
     }
+
 }
