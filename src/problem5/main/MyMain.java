@@ -43,7 +43,7 @@ public class MyMain {
                         obj.enqueue(temp.getData());
                     }
                     break;
-            }
+                }
             System.out.print("Press 1 to enqueue, press 2 to dequeue: ");
             counter=sc.nextInt();
             sc.nextLine();
