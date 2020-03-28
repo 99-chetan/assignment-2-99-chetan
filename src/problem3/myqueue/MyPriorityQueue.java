@@ -24,4 +24,16 @@ public class MyPriorityQueue {
         }
         return response;
     }
+    public Node dequeue(){
+        Node response=null;
+        if(isEmpty()){
+            if(front.getNext()!=null){
+                response=new Node(front.getData());
+                front=front.getNext();
+                rear.setNext(front);
+                size--;
+            }
+
+        }
+    }
 }
