@@ -18,6 +18,8 @@ public class MyMain {
         obj.insert(13);
         obj.insert(1);
         obj.insert(7);
-
+        MyQueue mq = new MyQueue();
+        mq.preSuccessor(obj.getRoot());
+        mq.getPreSucc();
     }
 }
