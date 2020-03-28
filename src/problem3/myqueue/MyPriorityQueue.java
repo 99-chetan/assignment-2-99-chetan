@@ -17,6 +17,7 @@ public class MyPriorityQueue {
         rear=null;
         size=0;
     }
+
     public boolean isEmpty(){
         boolean response=false;
         if(front!=null || size!=0){
@@ -24,6 +25,7 @@ public class MyPriorityQueue {
         }
         return response;
     }
+
     public Node dequeue(){
         Node response=null;
         if(isEmpty()){
@@ -96,5 +98,7 @@ public class MyPriorityQueue {
             System.out.println("Queue is empty");
         }
     }
-
+    public int getSize() {
+        return size;
+    }
 }
