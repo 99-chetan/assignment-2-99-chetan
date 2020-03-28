@@ -5,7 +5,10 @@
  *  Time: 7:13 PM
  */
 package problem3.main;
-// executable class
-// use problem5.student.Student class to create object of student
+import problem3.myqueue.MyPriorityQueue;
+import problem3.node.Node;
+import java.util.Scanner;
+
 public class MyMain {
+
 }
