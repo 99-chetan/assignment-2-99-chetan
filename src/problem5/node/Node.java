@@ -22,4 +22,10 @@ public class Node {
     public void setData(Student data) {
         this.data = data;
     }
+    public Node getNext() {
+        return next;
+    }
+    public void setNext(Node next) {
+        this.next = next;
+    }
 }
