@@ -51,6 +51,11 @@ public class MyPriorityQueue {
             size++;
             System.out.println("Value Entered successfully...");
         }
-
+        else if(data<=front.getData()){
+            node.setNext(front);
+            front=node;
+            size++;
+            System.out.println("Value Entered successfully...");
+        }
     }
 }
