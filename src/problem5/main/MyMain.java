@@ -29,6 +29,20 @@ public class MyMain {
                     Student stu = new Student(roll, name, back);
                     obj.enqueue(stu);
                     break;
+                case 2:
+                    if(obj.peek().getData().getBacklog()==0||obj.peek().getData().getCount()==2){
+                        Node temp= obj.dequeue();
+                        System.out.println("Removed Student Detail");
+                        System.out.println("Name: "+temp.getData().getName());
+                        System.out.println("Roll no: "+temp.getData().getRollno());
+                    }
+                    else{
+                        System.out.println("Student details can't be removed. It will be appended again");
+                        Node temp=obj.dequeue();
+                        temp.getData().getINX();
+                        obj.enqueue(temp.getData());
+                    }
+                    break;
             }
         }
     }
