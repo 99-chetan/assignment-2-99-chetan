@@ -38,7 +38,7 @@ public class MyQueue {
         }
     }
 
-    public void getPreSucc(){
+    public void getPre(){
         Node temp = front.getNext();
         while(temp!=null){
             System.out.print(temp.getData()+"\t");
