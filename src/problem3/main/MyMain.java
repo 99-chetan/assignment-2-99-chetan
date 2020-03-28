@@ -15,6 +15,13 @@ public class MyMain {
         MyPriorityQueue obj=new MyPriorityQueue();
         System.out.print("For Insertion press 1, for Dequeue press 2, for traversing press3, to print number of elements press 4: ");
         int counter = sc.nextInt();
-
+        while(counter!=0){
+            switch(counter){
+                case 1:
+                    System.out.print("Enter number you want to enter: ");
+                    obj.enqueue(sc.nextInt());
+                    break;
+            }
+        }
     }
 }
