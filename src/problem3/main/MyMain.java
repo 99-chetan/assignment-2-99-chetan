@@ -21,6 +21,15 @@ public class MyMain {
                     System.out.print("Enter number you want to enter: ");
                     obj.enqueue(sc.nextInt());
                     break;
+                case 2:
+                    Node result=obj.dequeue();
+                    if(result!=null) {
+                        System.out.println("The number is: " + result.getData() + ". Your number is also deleted from Queue");
+                    }
+                    else{
+                        System.out.println("The Queue is empty");
+                    }
+                    break;
             }
         }
     }
