@@ -44,6 +44,9 @@ public class MyMain {
                     }
                     break;
             }
+            System.out.print("Press 1 to enqueue, press 2 to dequeue: ");
+            counter=sc.nextInt();
+            sc.nextLine();
         }
     }
 }
